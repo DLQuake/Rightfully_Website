@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rightfully sign Up</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="styles/signUp_page/style..css">
+    <link rel="icon" href="img/icon.png" type="image/png">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <a class="header__logo-link" href="index.html">
+            <img class="navigation__logo-image" src="img/logo.png" alt="Rightfully's logo">
+        </a>
+    </header>
+
+    <main class="main">
+        <div class="main__container">
+            <div class="main__title">
+                <h1 class="main__title--big-text">Sign Up</h1>
+                <p class="main__title--small-text">You're just a few steps away from getting back what's rightfully yours.</p>
+            </div>
+
+            <form action="?" class="main__form">
+                <div class="main__form-data">
+                    <label class="main__form-item" for="first-name">
+                        First name
+                        <input class="main__form-item--input" type="text" placeholder="First name">
+                    </label>
+                    <label class="main__form-item" for="last-name">
+                        Last name
+                        <input class="main__form-item--input" type="text" placeholder="Last name">
+                    </label>
+                    <label class="main__form-item" for="Amazon_storefront-name">
+                        Amazon storefront name
+                        <input class="main__form-item--input" type="text" placeholder="Amazon storefront name">
+                    </label>
+                    <label class="main__form-item" for="Primary-marketplace">
+                        Primary marketplace
+                        <select class="main__form-item-select" name="markatplaces">
+                            <option class="main__form-item-select--gray" value="primary_marketplace" selected>Primary marketplace</option>
+                            <option class="main__form-item-select--option" value="value1">lorem ipusm 1</option>
+                            <option class="main__form-item-select--option" value="value2">lorem ipsum 2</option>
+                            <option class="main__form-item-select--option" value="value3">lorem ipsum 3</option>
+                            <option class="main__form-item-select--option" value="value4">lorem ipsum 4</option>
+                        </select>
+                    </label>
+
+                    <label class="main__form-item" for="email">
+                        Email address
+                        <input class="main__form-item--input" type="email" placeholder="Email address">
+                    </label>
+                </div>
+
+                <div class="main__form-password">
+                    <label class="main__form-item" for="password">
+                        Password
+                        <input class="main__form-item--input" id="password1" type="password" placeholder="Password">
+                        <i class="bi bi-eye-slash main__form-item--eye" id="togglePassword1"></i>
+                    </label>
+                    <label class="main__form-item" for="password-confirmation">
+                        Password confirmation
+                        <input class="main__form-item--input" id="password2" type="password" placeholder="Password confirmation">
+                        <i class="bi bi-eye-slash main__form-item--eye" id="togglePassword2"></i>
+                    </label>
+                </div>
+
+            </form>
+
+            <div class="main__container-agrees">
+                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                <label class="main__container-terms" for="terms">
+                    <input class="main__container-terms--checkbox" type="checkbox">
+                    I have read and agree to the <a href="#" class="main__container-terms--link"> Terms of Service</a>
+                </label>
+            </div>
+
+
+            <div class="main__container-creating-account">
+                <input class="main__container-submit" type="submit" value="Create an account">
+
+                <div class="main__container-login">
+                    Already have an account? <a href="login.html" class="main__container-login--link">Log in</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="js/show_password.js"></script>
+</body>
+
+</html>

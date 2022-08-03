@@ -1,0 +1,166 @@
+.footer
+    height: 348px
+    display: flex
+    flex-direction: row
+
+    &__scrollUp
+        display: none
+
+    &__container
+        width: 100%
+        margin-top: 30px
+        background-color: $yellow
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
+
+
+    &__left
+        width: 50%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        &-container
+            display: flex
+            flex-direction: column
+            gap: 100px
+
+        &-navigation
+            display: flex
+            flex-direction: column
+            gap: 40px
+            align-items: flex-start
+
+            &-list
+                display: flex
+                flex-direction: row
+                gap: 20px
+                list-style: none
+
+                &-item
+                    color: $black
+                    font-weight: 700
+                    font-size: 18px
+                    line-height: 22px
+                    text-align: center
+                    text-decoration: none
+
+        &-copyrithing
+            font-weight: 400
+            font-size: 16px
+            line-height: 19px
+            color: $black
+
+
+    &__right
+        width: 50%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding-bottom: 120px
+
+        &-container
+            display: flex
+            flex-direction: column
+            gap: 40px
+
+        &-list
+            width: 254px
+            display: flex
+            flex-direction: row
+            gap: 20px
+            list-style: none
+            justify-content: center
+
+            &-signup
+                color: $yellow
+                font-weight: 700
+                font-size: 16px
+                line-height: 19px
+                text-align: center
+                padding: 10px 28px
+                background-color: $black
+                text-decoration: none
+                text-transform: uppercase
+
+            &-login
+                color: $black
+                font-weight: 700
+                font-size: 16px
+                line-height: 19px
+                text-align: center
+                padding: 8px 28px
+                background-color: $yellow
+                border: 2px solid $black
+                text-decoration: none
+                text-transform: uppercase
+
+        &-social-media
+            width: 254px
+            background: $black
+            display: flex
+            flex-direction: row
+            justify-content: center
+            list-style: none
+            padding: 5px 0px
+            gap: 40px
+
+            &--link
+                color: $yellow
+                font-size: 25px
+                text-decoration: none
+
+@media (max-width: 600px)
+    .footer
+        height: auto
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        &__scrollUp
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 46.11px
+            height: 46.11px
+            background: $yellow
+            border: 4px solid $black
+            font-size: 40px
+            color: $black
+            text-decoration: none
+
+        &__container
+            flex-direction: column
+
+        &__left
+            position: relative
+            top: 60px
+            height: auto
+            &-container
+                justify-content: space-between
+                align-items: center
+                gap: 250px
+
+            &-navigation
+                justify-content: center
+                align-items: center
+
+            &-copyrithing
+                text-align: center
+
+        &__right
+            position: relative
+            top: -200px
+            padding: 0
+            &-container
+                gap: 100px
+
+            &-social-media
+                background: transparent
+
+                &--link
+                    color: $black

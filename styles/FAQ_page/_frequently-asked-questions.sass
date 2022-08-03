@@ -1,0 +1,116 @@
+.frequently-asked-questions
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 100%
+    gap: 80px
+
+    &__title
+        font-weight: 800
+        font-size: 48.033px
+        line-height: 102.02%
+        text-align: center
+        color: $black
+
+    &__questions
+        display: flex
+        flex-direction: row
+        justify-content: center
+        width: 100%
+        gap: 20px
+
+        &-left
+            display: flex
+            flex-direction: column
+            gap: 20px
+
+        &-right
+            display: flex
+            flex-direction: column
+            gap: 20px
+
+        &--item
+            width: 485px
+
+        &--question
+            font-weight: 900
+            font-size: 18px
+            line-height: 22px
+            display: flex
+            align-items: center
+            color: $black
+            background: $yellow
+            padding: 20px
+            border: 4px solid $black
+            cursor: pointer
+
+        &--symbol
+            font-size: 20px
+            line-height: 30px
+            color: $black
+            margin-left: 15px
+            transition: transform 0.3s ease-in-out
+
+        &--answer
+            font-weight: 400
+            font-size: 16px
+            line-height: 19px
+            padding: 40px
+            border-left: 4px solid $black
+            border-right: 4px solid $black
+            border-bottom: 4px solid $black
+            background-color: $white
+            position: relative
+            display: none
+
+    &__small-text
+        font-weight: 800
+        font-size: 18px
+        line-height: 102.02%
+        text-align: center
+        color: #000000
+
+    &__rectangle
+        width: 1012px
+        height: 0px
+        border: 2px solid $black
+        display: none
+
+.show
+    display: flex
+
+@media (max-width: 1050px)
+    .frequently-asked-questions
+        &__title
+            font-size: 5vw
+
+        &__questions
+            flex-direction: column
+            &-left
+                gap: 20px
+                align-items: center
+                justify-content: center
+
+            &-right
+                gap: 20px
+                align-items: center
+                justify-content: center
+
+            &--item
+                width: 80vw
+
+            &--question
+                justify-content: space-between
+                font-size: 16px
+                line-height: 19px
+                padding: 10px
+
+        &__small-text
+            width: 80vw
+            font-size: 16px
+            line-height: 123.52%
+
+        &__rectangle
+            display: block
+            width: 90vw

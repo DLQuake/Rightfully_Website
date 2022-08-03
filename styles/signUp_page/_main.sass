@@ -1,0 +1,220 @@
+.main
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 80px 0 80px 0
+
+    &__title
+        text-align: center
+        display: flex
+        flex-direction: column
+        gap: 20px
+
+        &--big-text
+            font-weight: 800
+            font-size: 48.033px
+            line-height: 102.02%
+
+        &--small-text
+            font-weight: 400
+            font-size: 16px
+            line-height: 19px
+
+    &__container
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        gap: 60px
+
+        &-agrees
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            gap: 20px
+
+        &-terms
+            font-weight: 400
+            font-size: 18px
+            line-height: 102.02%
+            text-align: center
+
+            &--checkbox
+                width: 20px
+                height: 20px
+                box-shadow: 0px 0px 0px 3px $black
+
+            &--link
+                color: $yellow
+                text-underline-position: under
+
+        &-creating-account
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            gap: 20px
+
+        &-submit
+            width: 540.5px
+            height: 53.89px
+            padding: 0
+            font-size: 27px
+            display: flex
+            align-items: center
+            justify-content: center
+            background: $yellow
+            border: 4px solid $black
+            cursor: pointer
+            box-shadow: none
+            font-weight: 500
+            font-size: 27px
+            line-height: 33px
+
+        &-login
+            font-weight: 400
+            font-size: 18px
+            line-height: 102.02%
+
+            &--link
+                color: $yellow
+                text-underline-position: under
+
+    &__form
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        height: 100%
+        gap: 30px
+
+        &-data
+            width: 1150px
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            flex-wrap: wrap
+            gap: 20px
+
+        &-password
+            width: 1150px
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            flex-wrap: wrap
+            margin-bottom: 30px
+
+        &-item
+            display: flex
+            flex-direction: column
+            gap: 20px
+
+            &--eye
+                width: 20px
+                position: relative
+                left: 490px
+                top: -70px
+                cursor: pointer
+                font-size: 25px
+
+            &--input
+                width: 492.5px
+                padding: 20px
+                background: $white
+                border: 4px solid $black
+                color: $black
+                font-weight: 500
+                font-size: 16px
+                line-height: 19px
+                display: flex
+                box-shadow: 10px 10px $yellow
+
+                &::placeholder
+                    color: #C7C7C7
+
+            &-select
+                width: 540.5px
+                padding: 20px
+                background: $white
+                border: 4px solid $black
+                color: #C7C7C7
+                font-weight: 500
+                font-size: 16px
+                line-height: 19px
+                display: flex
+                box-shadow: 10px 10px $yellow
+
+                appearance: none
+                -moz-appearance: none
+                -webkit-appearance: none
+                background: url(../../img/arrow.png) 97% center no-repeat !important
+
+                &--gray
+                    color: #C7C7C7
+
+                &--option
+                    color: $black
+                    height: 400px
+
+
+@media (max-width: 1150px)
+    .main
+        &__title
+            &--big-text
+                font-size: 6vw
+            &--small-text
+                width: 60vw
+                font-size: 14px
+
+        &__form
+            gap: 30px
+            &-data
+                width: 100%
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                flex-wrap: wrap
+                gap: 35px
+
+            &-password
+                width: 100%
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                flex-wrap: wrap
+                gap: 0px
+
+            &-item
+                gap: 5px
+
+                &--eye
+                    position: relative
+                    left: 67vw
+                    top: -45px
+
+                &--input
+                    width: 70vw
+                    padding: 10px
+
+                &-select
+                    width: 72.426vw
+                    padding: 10px
+
+
+        &__container
+            gap: 10px
+
+            &-agrees
+                width: 100%
+
+            &-terms
+                width: 50vw
+                line-height: 1.5
+
+            &-submit
+                width: 75vw
+                font-size: 22px

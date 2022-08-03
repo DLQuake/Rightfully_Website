@@ -1,0 +1,91 @@
+.contact
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 100%
+    gap: 80px
+
+    &__title
+        font-weight: 800
+        font-size: 48.033px
+        line-height: 102.02%
+        text-align: center
+        color: $black
+
+    &__small-text
+        width: 733px
+        font-weight: 800
+        font-size: 18px
+        line-height: 85.02%
+        text-align: center
+        color: $black
+
+
+    &__form
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
+        width: 910px
+        gap: 20px
+        flex-wrap: wrap
+
+        &-item
+            width: 492.5px
+            background: $white
+            border: 4px solid $black
+            color: $black
+            width: 396.37px
+            font-weight: 900
+            font-size: 16px
+            line-height: 19px
+            display: flex
+            padding: 20px
+            box-shadow: 10px 10px $yellow
+
+            &::placeholder
+                color: $black
+
+            &--textarea
+                width: 860px
+                height: 186.34px
+                color: $black
+                resize: none
+
+            &--submit
+                width: 181.17px
+                height: 53.89px
+                font-size: 27px
+                display: flex
+                align-items: center
+                justify-content: center
+                background: $yellow
+                border: 4px solid $black
+                position: relative
+                cursor: pointer
+                left: 365px
+                box-shadow: 0px 0px $yellow
+
+    &__scrollUp
+        display: none
+
+@media (max-width: 1050px)
+    .contact
+        &__title
+            font-size: 5vw
+
+        &__small-text
+            width: 80vw
+            font-size: 16px
+            line-height: 19px
+
+        &__form
+            flex-direction: column
+            width: 100%
+
+            &-item
+                width: 70vw
+
+                &--submit
+                    left: 0px
