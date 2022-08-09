@@ -44,6 +44,12 @@
             padding: 20px
             box-shadow: 10px 10px $yellow
 
+            &:hover
+                background: #e6e6e6
+                transform: scale(1.05)
+                transition: all 0.3s ease-in-out
+                cursor: pointer
+
             &::placeholder
                 color: $black
 
@@ -66,6 +72,10 @@
                 cursor: pointer
                 left: 365px
                 box-shadow: 0px 0px $yellow
+
+                &:hover
+                    background: $black
+                    color: $yellow
 
     &__scrollUp
         display: none

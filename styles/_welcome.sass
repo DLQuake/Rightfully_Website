@@ -25,7 +25,7 @@
             justify-content: center
             gap: 80px
 
-            &--item
+            &-item
                 background-color: $yellow
                 height: 38.53px
                 padding: 0px 20px 10px 20px
@@ -81,6 +81,11 @@
             top: -20px
             left: 500px
 
+            &:hover
+                background: $black
+                color: $yellow
+                transition: all 0.3s ease-in-out
+
     &__saying
         display: flex
         flex-direction: row
@@ -118,7 +123,7 @@
                 font-size: 11vw
                 gap: 9vw
 
-                &--item
+                &-item
                     height: 3vw
                     padding: 0px 8px 4px 8px
                     display: flex

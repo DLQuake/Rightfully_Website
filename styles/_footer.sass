@@ -48,6 +48,11 @@
                     text-align: center
                     text-decoration: none
 
+                    &:hover
+                        text-decoration: underline
+                        text-underline-position: under
+                        cursor: pointer
+
         &-copyrithing
             font-weight: 400
             font-size: 16px
@@ -87,6 +92,15 @@
                 text-decoration: none
                 text-transform: uppercase
 
+                &:hover
+                    background: $yellow
+                    color: $black
+                    transition: 0.5s all ease-out
+                    border: 2px solid $black
+                    padding: 8px 25px
+                    text-decoration: underline
+                    text-underline-position: under
+
             &-login
                 color: $black
                 font-weight: 700
@@ -99,6 +113,14 @@
                 text-decoration: none
                 text-transform: uppercase
 
+                &:hover
+                    background: $black
+                    color: $yellow
+                    transition: 0.5s all ease-out
+                    text-decoration: underline
+                    text-underline-position: under
+
+
         &-social-media
             width: 254px
             background: $black
@@ -109,10 +131,17 @@
             padding: 5px 0px
             gap: 40px
 
-            &--link
+            &-link
                 color: $yellow
                 font-size: 25px
                 text-decoration: none
+
+                &:hover
+                    color: $black
+                    background: $yellow
+                    padding: 8px
+                    transition: 0.5s all ease-out
+                    cursor: pointer
 
 @media (max-width: 600px)
     .footer
@@ -162,5 +191,12 @@
             &-social-media
                 background: transparent
 
-                &--link
+                &-link
                     color: $black
+
+                    &:hover
+                        color: $yellow
+                        background: $black
+                        padding: 8px
+                        transition: 0.5s all ease-out
+                        cursor: pointer
