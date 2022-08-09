@@ -13,40 +13,63 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-    <link rel="stylesheet" href="styles/login_page/style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="img/icon.png" type="image/png">
 </head>
 
 <body>
-    <header class="header">
-        <a class="header__logo-link" href="index.html">
-            <img class="navigation__logo-image" src="img/logo.png" alt="Rightfully's logo">
-        </a>
+    <header class="header header--yellow">
+        <div class="slogan slogan--none">ASGTG & YML SOLUTIONS is now RIGHTFULLY</div>
+
+        <nav class="navigation">
+            <div class="navigation__logo">
+                <a class="navigation__logo-link" href="index.html">
+                    <img class="navigation__logo-image" src="img/logo.png" alt="Rightfully's logo">
+                </a>
+            </div>
+
+            <button class="navigation__button navigation__button--none" id="hamburger">
+                <div class="navigation__button-rectangle"></div>
+                <div class="navigation__button-rectangle"></div>
+            </button>
+
+            <ul class="navigation__list navigation__list--none" id="navUL">
+                <li><a class="navigation__list-item" href="#">About</a></li>
+                <li><a class="navigation__list-item" href="#">Princing</a></li>
+                <li><a class="navigation__list-item" href="faq.html">FAQ</a></li>
+                <li><a class="navigation__list-item" href="index.html#Tocontact">Contact</a></li>
+                <li><div class="navigation__list-item navigation__list-item--rectangle"></div></li>
+                <li><a class="navigation__list-item navigation__list-item--signup" href="signUp.html">Sign up</a></li>
+                <li><a class="navigation__list-item navigation__list-item--login" href="login.html">Login</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main class="main">
-        <div class="main__container">
-            <h1 class="main__title">
+
+        <div class="login">
+            <h1 class="login__title">
                 Pick up where amazon dropped off
             </h1>
 
-            <form action="#" class="main__form">
-                <div class="main__form-name">Log in</div>
-                <input class="main__form-item" type="text" placeholder="Username">
-                <input class="main__form-item" id="password1" type="password" placeholder="Password">
-                <i class="bi bi-eye-slash main__form-item--eye" id="togglePassword1"></i>
+            <form action="#" class="login__form">
+                <div class="login__form-name">Log in</div>
+                <input class="login__form-item" type="text" placeholder="Username">
+                <input class="login__form-item" id="password1" type="password" placeholder="Password">
+                <i class="bi bi-eye-slash login__form-item--eye" id="togglePassword1"></i>
                 
-                <input class="main__form-item main__form-item--submit" type="submit" value="Log in">
-                <div class="main__form-forget-password">
-                    Forgot password? <a href="#" class="main__form-forget-password--link">Recover it</a>
+                <input class="login__form-item login__form-item--submit" type="submit" value="Log in">
+                <div class=loginn__form-forget-password">
+                    Forgot password? <a href="#" class="login__form-forget-password--link">Recover it</a>
                 </div>
-                <div class="main__form-rectangle"></div>
-                <div class="main__form-register">
-                    Don't have an account? <a href="signUp.html" class="main__form-register--link">Register</a>
+                <div class="login__form-rectangle"></div>
+                <div class="login__form-register">
+                    Don't have an account? <a href="signUp.html" class="login__form-register--link">Register</a>
                 </div>
             </form>
 
         </div>
+
     </main>
     <script src="js/show_password.js"></script>
 </body>

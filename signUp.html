@@ -12,93 +12,114 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-    <link rel="stylesheet" href="styles/signUp_page/style..css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="img/icon.png" type="image/png">
-
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
 </head>
 
 <body>
-    <header class="header">
-        <a class="header__logo-link" href="index.html">
-            <img class="navigation__logo-image" src="img/logo.png" alt="Rightfully's logo">
-        </a>
+    <header class="header header--yellow">
+        <div class="slogan slogan--none">ASGTG & YML SOLUTIONS is now RIGHTFULLY</div>
+
+        <nav class="navigation">
+            <div class="navigation__logo">
+                <a class="navigation__logo-link" href="index.html">
+                    <img class="navigation__logo-image" src="img/logo.png" alt="Rightfully's logo">
+                </a>
+            </div>
+
+            <button class="navigation__button navigation__button--none" id="hamburger">
+                <div class="navigation__button-rectangle"></div>
+                <div class="navigation__button-rectangle"></div>
+            </button>
+
+            <ul class="navigation__list navigation__list--none" id="navUL">
+                <li><a class="navigation__list-item" href="#">About</a></li>
+                <li><a class="navigation__list-item" href="#">Princing</a></li>
+                <li><a class="navigation__list-item" href="faq.html">FAQ</a></li>
+                <li><a class="navigation__list-item" href="index.html#Tocontact">Contact</a></li>
+                <li><div class="navigation__list-item navigation__list-item--rectangle"></div></li>
+                <li><a class="navigation__list-item navigation__list-item--signup" href="signUp.html">Sign up</a></li>
+                <li><a class="navigation__list-item navigation__list-item--login" href="login.html">Login</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main class="main">
-        <div class="main__container">
-            <div class="main__title">
-                <h1 class="main__title--big-text">Sign Up</h1>
-                <p class="main__title--small-text">You're just a few steps away from getting back what's rightfully yours.</p>
+
+        <div class="signUp">
+            <div class="signUp__title">
+                <h1 class="signUp__title--big-text">Sign Up</h1>
+                <p class="signUp__title--small-text">You're just a few steps away from getting back what's rightfully yours.</p>
             </div>
 
-            <form action="?" class="main__form">
-                <div class="main__form-data">
-                    <label class="main__form-item" for="first-name">
+            <form action="?" class="signUp__form">
+                <div class="signUp__form-data">
+                    <label class="signUp__form-item" for="first-name">
                         First name
-                        <input class="main__form-item--input" type="text" placeholder="First name">
+                        <input class="signUp__form-item--input" type="text" placeholder="First name">
                     </label>
-                    <label class="main__form-item" for="last-name">
+                    <label class="signUp__form-item" for="last-name">
                         Last name
-                        <input class="main__form-item--input" type="text" placeholder="Last name">
+                        <input class="signUp__form-item--input" type="text" placeholder="Last name">
                     </label>
-                    <label class="main__form-item" for="Amazon_storefront-name">
+                    <label class="signUp__form-item" for="Amazon_storefront-name">
                         Amazon storefront name
-                        <input class="main__form-item--input" type="text" placeholder="Amazon storefront name">
+                        <input class="signUp__form-item--input" type="text" placeholder="Amazon storefront name">
                     </label>
-                    <label class="main__form-item" for="Primary-marketplace">
+                    <label class="signUp__form-item" for="Primary-marketplace">
                         Primary marketplace
-                        <select class="main__form-item-select" name="markatplaces">
-                            <option class="main__form-item-select--gray" value="primary_marketplace" selected>Primary marketplace</option>
-                            <option class="main__form-item-select--option" value="value1">lorem ipusm 1</option>
-                            <option class="main__form-item-select--option" value="value2">lorem ipsum 2</option>
-                            <option class="main__form-item-select--option" value="value3">lorem ipsum 3</option>
-                            <option class="main__form-item-select--option" value="value4">lorem ipsum 4</option>
+                        <select class="signUp__form-item-select" name="markatplaces">
+                            <option class="signUp__form-item-select--gray" value="primary_marketplace" selected>Primary marketplace</option>
+                            <option class="signUp__form-item-select--option" value="value1">lorem ipusm 1</option>
+                            <option class="signUp__form-item-select--option" value="value2">lorem ipsum 2</option>
+                            <option class="signUp__form-item-select--option" value="value3">lorem ipsum 3</option>
+                            <option class="signUp__form-item-select--option" value="value4">lorem ipsum 4</option>
                         </select>
                     </label>
 
-                    <label class="main__form-item" for="email">
+                    <label class="signUp__form-item" for="email">
                         Email address
-                        <input class="main__form-item--input" type="email" placeholder="Email address">
+                        <input class="signUp__form-item--input" type="email" placeholder="Email address">
                     </label>
                 </div>
 
-                <div class="main__form-password">
-                    <label class="main__form-item" for="password">
+                <div class="signUp__form-password">
+                    <label class="signUp__form-item" for="password">
                         Password
-                        <input class="main__form-item--input" id="password1" type="password" placeholder="Password">
-                        <i class="bi bi-eye-slash main__form-item--eye" id="togglePassword1"></i>
+                        <input class="signUp__form-item--input" id="password1" type="password" placeholder="Password">
+                        <i class="bi bi-eye-slash signUp__form-item--eye" id="togglePassword1"></i>
                     </label>
-                    <label class="main__form-item" for="password-confirmation">
+                    <label class="signUp__form-item" for="password-confirmation">
                         Password confirmation
-                        <input class="main__form-item--input" id="password2" type="password" placeholder="Password confirmation">
-                        <i class="bi bi-eye-slash main__form-item--eye" id="togglePassword2"></i>
+                        <input class="signUp__form-item--input" id="password2" type="password" placeholder="Password confirmation">
+                        <i class="bi bi-eye-slash signUp__form-item--eye" id="togglePassword2"></i>
                     </label>
                 </div>
 
             </form>
 
-            <div class="main__container-agrees">
+            <div class="signUp__agrees">
                 <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-                <label class="main__container-terms" for="terms">
-                    <input class="main__container-terms--checkbox" type="checkbox">
-                    I have read and agree to the <a href="#" class="main__container-terms--link"> Terms of Service</a>
+                <label class="signUp__terms" for="terms">
+                    <input class="signUp__terms--checkbox" type="checkbox">
+                    I have read and agree to the <a href="#" class="signUp__terms--link"> Terms of Service</a>
                 </label>
             </div>
 
 
-            <div class="main__container-creating-account">
-                <input class="main__container-submit" type="submit" value="Create an account">
+            <div class="signUp__creating-account">
+                <input class="signUp__submit" type="submit" value="Create an account">
 
-                <div class="main__container-login">
-                    Already have an account? <a href="login.html" class="main__container-login--link">Log in</a>
+                <div class="signUp__login">
+                    Already have an account? <a href="login.html" class="signUp__login--link">Log in</a>
                 </div>
             </div>
 
         </div>
+
     </main>
 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="js/show_password.js"></script>
 </body>
 
